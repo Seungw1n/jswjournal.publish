@@ -258,15 +258,15 @@ window.onload = () =>{
     document.addEventListener("mousemove", mouseFunc);
 }
 
-function randomlocWidth(widmin, widmax){
-    var randWid = Math.floor(Math.random()*(widmax-widmin+1));
-    return randWid;
-}
+// function randomlocWidth(widmin, widmax){
+//     var randWid = Math.floor(Math.random()*(widmax-widmin+1));
+//     return randWid;
+// }
 
-function randomlocHeight(heimin, heimax){
-    var randHei = Math.floor(Math.random()*(heimax-heimin+1));
-    return randHei;
-}
+// function randomlocHeight(heimin, heimax){
+//     var randHei = Math.floor(Math.random()*(heimax-heimin+1));
+//     return randHei;
+// }
 
 /*
 var awidth = randomWid(1, window.screen.width);
@@ -324,55 +324,81 @@ setInterval(function() {
     new_popup = window.open(popupURL, "children1", 'width=300, height=280, top=1, left=1000, status=no, menubar=no');
     
     setInnerHTML()
-}, 10000);
+}, 24000);
 
 setInterval(function() {
     var indexURL = Math.floor((Math.random() * myURL.length));
     var popupURL = myURL[indexURL];
     new_popup = window.open(popupURL, "children2", 'width=300, height=280, top=1, left=1300, status=no, menubar=no');
-}, 16000);
-
-setInterval(function() {
-    var indexURL = Math.floor((Math.random() * myURL.length));
-    var popupURL = myURL[indexURL];
-    new_popup = window.open(popupURL, "children3", 'width=300, height=280, top=1, left=1600, status=no, menubar=no');
-}, 26000);
-
-setInterval(function() {
-    var indexURL = Math.floor((Math.random() * myURL.length));
-    var popupURL = myURL[indexURL];
-    new_popup = window.open(popupURL, "children4", 'width=300, height=280, top=341, left=1000, status=no, menubar=no');
 }, 32000);
 
 setInterval(function() {
     var indexURL = Math.floor((Math.random() * myURL.length));
     var popupURL = myURL[indexURL];
-    new_popup = window.open(popupURL, "children5", 'width=300, height=280, top=341, left=1300, status=no, menubar=no');
+    new_popup = window.open(popupURL, "children3", 'width=300, height=280, top=1, left=1600, status=no, menubar=no');
 }, 40000);
 
 setInterval(function() {
     var indexURL = Math.floor((Math.random() * myURL.length));
     var popupURL = myURL[indexURL];
-    new_popup = window.open(popupURL, "children6", 'width=300, height=280, top=341, left=1600, status=no, menubar=no');
+    new_popup = window.open(popupURL, "children4", 'width=300, height=280, top=341, left=1000, status=no, menubar=no');
 }, 48000);
 
 setInterval(function() {
     var indexURL = Math.floor((Math.random() * myURL.length));
     var popupURL = myURL[indexURL];
-    new_popup = window.open(popupURL, "children7", 'width=300, height=280, top=681, left=1000, status=no, menubar=no');
+    new_popup = window.open(popupURL, "children5", 'width=300, height=280, top=341, left=1300, status=no, menubar=no');
 }, 56000);
 
 setInterval(function() {
     var indexURL = Math.floor((Math.random() * myURL.length));
     var popupURL = myURL[indexURL];
-    new_popup = window.open(popupURL, "children8", 'width=300, height=280, top=681, left=1300, status=no, menubar=no');
+    new_popup = window.open(popupURL, "children6", 'width=300, height=280, top=341, left=1600, status=no, menubar=no');
 }, 64000);
 
 setInterval(function() {
     var indexURL = Math.floor((Math.random() * myURL.length));
     var popupURL = myURL[indexURL];
-    new_popup = window.open(popupURL, "children9", 'width=300, height=280, top=681, left=1600, status=no, menubar=no');
+    new_popup = window.open(popupURL, "children7", 'width=300, height=280, top=681, left=1000, status=no, menubar=no');
 }, 72000);
+
+setInterval(function() {
+    var indexURL = Math.floor((Math.random() * myURL.length));
+    var popupURL = myURL[indexURL];
+    new_popup = window.open(popupURL, "children8", 'width=300, height=280, top=681, left=1300, status=no, menubar=no');
+}, 80000);
+
+setInterval(function() {
+    var indexURL = Math.floor((Math.random() * myURL.length));
+    var popupURL = myURL[indexURL];
+    new_popup = window.open(popupURL, "children9", 'width=300, height=280, top=681, left=1600, status=no, menubar=no');
+}, 88000);
+
+
+
+var myHair = new Array(
+    './hair/day_1_1.png',
+    './hair/day_2_1.png',
+    './hair/day_3_1.png',
+    './hair/day_4_1.png',
+    './hair/day_5_1.png',
+    './hair/day_6_1.png',
+    './hair/day_7_1.png',
+    './hair/day_8_1.png',
+    './hair/day_9_1.png',
+    './hair/day_10_1.png',
+    './hair/day_11_1.png'
+);
+
+setInterval(function() {
+    var indexHair = Math.floor((Math.random() * myHair.length));
+    var popupHair = myHair[indexHair];
+
+    var url = popupHair;
+ 
+    var itemBG = document.getElementById("item-bg");
+    itemBG.style.backgroundImage = `url(${url})`;
+}, 20000);
 
 
 // function closeTabClick() {

@@ -79,7 +79,7 @@ div.title {
     width: 500px;
     height: 1080px;
     font-family: 'Spoqa Han Sans Neo';
-    font-weight: 300;
+    font-weight: 400;
     font-size: 20px;
 }
 
@@ -93,7 +93,7 @@ div.content {
     overflow-y: scroll;
     line-height: 26px;
     font-family: 'BareunBatang', serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
 
     -webkit-animation-name: move;
